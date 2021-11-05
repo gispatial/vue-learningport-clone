@@ -1,5 +1,5 @@
 # Vue Netflix Clone
-A simple [Netflix](https://netflix.com) clone based on Vue powered by [Firebase](https://firebase.google.com). Please take note im not using Json feeds taken from https://itunes.apple.com/us/rss/topmovies/limit=100/json instead im using direct API's from MDB. Im sorry bout not having lacked of time doing this frontend assessment. Mr. Donald... hopes my apology accepted.
+A simple [Netflix](https://netflix.com) clone based on Vue powered by [Firebase](https://firebase.google.com). Please take note im not using Json feeds taken from https://itunes.apple.com/us/rss/topmovies/limit=100/json instead im using direct API's from MDB. Im sorry bout not doing this frontend assessment based on LearningPort requirement due to ample time with APPLE Json files. Mr. Donald... hopes my apology accepted.
 <div>
 </div>
 
