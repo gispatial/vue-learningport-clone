@@ -1,0 +1,17 @@
+@import "../../assets/scss/helpers/breakpoints";
+
+.Home {
+  &__main-slider {
+    height: 100vh;
+    @include sm {
+      height: 80vh;
+    }
+    .MovieDetails {
+      padding-top: 3rem;
+    }
+  }
+
+  &__slider-list {
+    padding: 2rem 0;
+  }
+}

@@ -1,0 +1,116 @@
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: Helvetica, Arial ,sans-serif;
+	font-size: 14px;
+	color: $white;
+  background: $gray900;
+  @include md {
+    font-size: 16px;;
+  }
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+a,
+button,
+input,
+textarea {
+	transition-duration: .3s;
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+input,
+textarea {
+  appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: $gray400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  color: $gray600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content-area {
+  overflow: hidden;
+}
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: static;
+  width: 100%;
+}
+
+.no-transition {
+  transition: none!important;
+  transition-duration: 0s!important;
+}
+
+.bg {
+  background-image: url("./assets/images/background/website.jpg");
+  background-position: center center;
+}
+
+.flex-jc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 1rem 0;
+  @include sm {
+    padding: 3rem 2rem 0;
+  }
+}
+
+.page__title {
+  font-size: 1.25rem;
+  @include sm {
+    font-size: 1.5rem;
+  }
+  @include md {
+    font-size: 2rem;
+  }
+}

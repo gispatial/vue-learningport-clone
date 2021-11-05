@@ -1,0 +1,95 @@
+.form {
+
+  &__field {
+    margin-bottom: 1rem;
+  }
+
+  &__btns {
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+    .btn {
+      width: 100%;
+      padding: .9rem;
+      font-weight: bold;
+      &:not(:last-child) {
+        margin-bottom: .5rem;
+      }
+    }
+  }
+
+  &__error {
+    &-list {
+      margin-top: .275rem;
+      padding: 0 .175rem;
+    }
+    &-item {
+      padding: .175rem 0;
+      color: $orange;
+      font-size: .815rem;
+    }
+    &-message {
+      margin-bottom: 1rem;
+      padding: .625rem 1.25rem;
+      font-size: .875rem;
+      background: $orange;
+      border-radius: .25rem;
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__required {
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: .5rem;
+      margin: .5rem 0 .75rem 0;
+    }
+    &-item {
+      position: relative;
+      padding-left: .7rem;
+      transition: all .2s ease-in-out;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 35%;
+        width: .4rem;
+        height: .4rem;
+        border-radius: 50%;
+        background-color: $red;
+        transition: all .2s ease-in-out;
+      }
+      &--done {
+        color: $gray600;
+        &:before {
+          background-color: $gray600;
+        }
+        & .SignUp__required-text:after {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+    &-text {
+      position: relative;
+      font-size: .6rem;
+      @include sm {
+        font-size: .725rem;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: 50%;
+        right: 50%;
+        top: 55%;
+        background-color: $gray600;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+}

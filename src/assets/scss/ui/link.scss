@@ -1,0 +1,16 @@
+.link {
+  font-size: 1rem;
+  color: $gray400;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--s {
+    font-size: .81rem;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../assets/scss/helpers/breakpoints";
+@import "../../assets/scss/helpers/variables";
+
+.MovieList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include xl {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__wrapper {
+    position: relative;
+    min-height: 75vh;
+    .Spinner__overflow {
+      background-color: transparent;
+    }
+  }
+
+  &__details {
+    width: 100vw;
+    @include md {
+      width: 80%;
+      height: 80%;
+    }
+    .MovieDetails {
+      min-height: 100vh;
+      @include md {
+        min-height: 80vh;
+      }
+      @include xl {
+        background-position: 20rem top;
+      }
+    }
+    &-backdrop {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: $z-index-modal;
+      background-color: rgba(0, 0, 0, .85);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__empty {
+    display: flex;
+    font-size: 1.25rem;
+    color: $gray600;
+    @include md {
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+      font-size: 1.5rem;
+    }
+  }
+}

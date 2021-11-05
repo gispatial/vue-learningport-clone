@@ -1,0 +1,41 @@
+@import './src/assets/scss/helpers/variables';
+
+.ProfileDropdown {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .dropdown {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .25rem;
+    border-radius: .25rem;
+    background-color: $yellow;
+  }
+  &__arrow {
+    padding: .25rem;
+  }
+
+  .dropdown {
+    right: 0;
+    padding: 0;
+    transform: none;
+    &:after {
+      right: 1.5rem;
+      transform: none;
+    }
+    &__btn {
+      width: 100%;
+      padding: .75rem 1rem;
+      &:after {
+        bottom: .5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: .3rem .9rem;
+  font-size: 1rem;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .18rem;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s ease-out;
+  &:not(:last-child) {
+    margin-right: .5rem;
+  }
+
+  @include sm {
+    padding: .4rem 1.1rem;
+  }
+
+  &--primary {
+    border: 1px solid $primary-btn;
+    background-color: $primary-btn;
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+    &:hover {
+      background: $primary-btn-hover;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $primary-btn;
+    background-color: transparent;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .45);
+    &:hover {
+      border-color: $primary-btn-hover;
+    }
+  }
+
+  &--close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 24px;
+    height: 24px;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $white;
+    }
+    &:before {
+      position: relative;
+      transform: translateY(50%) rotate(45deg);
+    }
+    &:after {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+}
