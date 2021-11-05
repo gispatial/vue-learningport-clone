@@ -61,7 +61,7 @@ https://github.com/gispatial/vue-learningport-clone.git
 
 Then change into that folder:
 ```shell
-cd vue-netflix-clone
+cd vue-learningport-clone
 ```
 
 Install project dependencies:
