@@ -1,10 +1,10 @@
 # Vue Netflix Clone
-A simple [Netflix](https://netflix.com) clone based on Vue powered by [Firebase](https://firebase.google.com). Please take note im not using Json feeds taken from https://itunes.apple.com/us/rss/topmovies/limit=100/json instead im using direct API's from MDB
+A simple [Netflix](https://netflix.com) clone based on Vue powered by [Firebase](https://firebase.google.com). Please take note im not using Json feeds taken from https://itunes.apple.com/us/rss/topmovies/limit=100/json instead im using direct API's from MDB. Im sorry bout not having lacked of time doing this frontend assessment. Mr. Donald... hopes my apology accepted.
 <div>
 </div>
 
 ## Live Demo
-Link: https://
+Link: https://lp-vue-netflix.vercel.app/
 
 ![example](https://github.com/Approxipix/vue-netflix-clone/blob/master/example1.png?raw=true)
 ![example](https://github.com/Approxipix/vue-netflix-clone/blob/master/example2.png?raw=true)
