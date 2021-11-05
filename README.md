@@ -56,7 +56,7 @@ VUE_APP_TMDB_API_KEY='c04229b243150afc8110c3e5a45344ec'
 ## Installation
 Clone project:
 ```shell
-https://github.com/Approxipix/vue-netflix-clone.git
+https://github.com/gispatial/vue-learningport-clone.git
 ```
 
 Then change into that folder:
